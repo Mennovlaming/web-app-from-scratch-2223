@@ -162,4 +162,14 @@ p  {
     gap: 1em;
   }
 
-  
+  .flip-card-front ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .flip-card-front ul li {
+    display: flex;
+    align-items: center;
+  }
