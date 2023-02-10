@@ -10,7 +10,7 @@ body {
     background-color: #efefef;
 }
 
-section {
+main {
     margin-top: 2em;
     width: 45em;
     height: 25em;
@@ -25,7 +25,7 @@ section {
     justify-content: start;
     align-items: center;
 }
-.left {
+main section:first-of-type {
     width: 25em;
     height: 25em;
     border-top-left-radius: 1em;
@@ -37,7 +37,7 @@ section {
     flex-direction: column;
     gap: 3em;
 }
-.right {
+main section:nth-of-type(2) {
 
     width: 20em;
     height: 25em;
@@ -55,7 +55,7 @@ section {
     align-items: flex-start;
     margin-top:1.5em;
 }
-section h1, section h2 {
+main h1, main h2 {
     color: white;
     text-align: center;
     font-weight: 700;
@@ -64,18 +64,18 @@ section h1, section h2 {
 h1 {
     font-size: 3em;
 }
-section li {
+main li {
     list-style-type: none;
     color: white;   
 
     display: flex;
     gap: 1em;
 }
-section li img {
+main li img {
     filter: invert(100%);
     width: 1.3em;
 }
-section div ul {
+main ul {
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -90,8 +90,6 @@ p  {
     width: 16em;
     height: 22em;
     perspective: 1000px;
-    
-    
   }
   
   .flip-card-inner {
